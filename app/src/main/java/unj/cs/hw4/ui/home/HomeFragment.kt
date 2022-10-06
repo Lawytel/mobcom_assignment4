@@ -1,12 +1,13 @@
 package unj.cs.hw4.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import unj.cs.hw4.R
+import unj.cs.hw4.adapter.ItemAdapter
 import unj.cs.hw4.data.Datasource
 import unj.cs.hw4.databinding.FragmentHomeBinding
 
@@ -23,17 +24,13 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-//        val homeViewModel =
-//            ViewModelProvider(this).get(HomeViewModel::class.java)
-
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        textView.text = Datasource().loadDataset().size.toString()
-//        homeViewModel.text.observe(viewLifecycleOwner) {
-//
-//        }
+        val myDataset = Datasource().loadDataset()
+        val recyclerView = binding.homeRecyclerView
+        recyclerView.adapter = ItemAdapter(requireContext(), myDataset)
+
         return root
     }
 
