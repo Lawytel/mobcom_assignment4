@@ -3,4 +3,24 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="coffee1">Coffee title 1</string>
+    <string name="coffee2">Coffee title 2</string>
+    <string name="coffee3">Coffee title 3</string>
+    <string name="coffee4">Coffee title 4</string>
+    <string name="coffee5">Coffee title 5</string>
+    <string name="coffee6">Coffee title 6</string>
+    <string name="coffee7">Coffee title 7</string>
+    <string name="coffee8">Coffee title 8</string>
+    <string name="coffee9">Coffee title 9</string>
+    <string name="coffee10">Coffee title 10</string>
+    <string name="coffee_desc1">Coffee desc 1</string>
+    <string name="coffee_desc2">Coffee desc 2</string>
+    <string name="coffee_desc3">Coffee desc 3</string>
+    <string name="coffee_desc4">Coffee desc 4</string>
+    <string name="coffee_desc5">Coffee desc 5</string>
+    <string name="coffee_desc6">Coffee desc 6</string>
+    <string name="coffee_desc7">Coffee desc 7</string>
+    <string name="coffee_desc8">Coffee desc 8</string>
+    <string name="coffee_desc9">Coffee desc 9</string>
+    <string name="coffee_desc10">Coffee desc 10</string>
 </resources>
