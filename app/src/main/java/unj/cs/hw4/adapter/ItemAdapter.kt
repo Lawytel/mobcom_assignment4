@@ -1,6 +1,7 @@
 package unj.cs.hw4.adapter
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,8 +36,9 @@ class ItemAdapter(private val context: Context, private val dataset: List<Coffee
         holder.imageView.setImageResource(item.imageResourceId)
         holder.descView.text = context.resources.getString(item.descResourceId)
         holder.card.setOnClickListener{
-            val action: NavDirections = HomeFragmentDirections.actionNavigationHomeToDetailsFragment()
+            val action: NavDirections = HomeFragmentDirections.actionNavigationHomeToDetailsFragment(position)
             holder.view.findNavController().navigate(action)
+            // Log.d("COFFEE POS", "$position")
         }
     }
 
