@@ -34,7 +34,8 @@ class ItemAdapter(private val context: Context, private val dataset: List<Coffee
         val item = dataset[position]
         holder.textView.text = context.resources.getString(item.titleResourceId)
         holder.imageView.setImageResource(item.imageResourceId)
-        holder.descView.text = context.resources.getString(item.descResourceId)
+        val descPreview = (context.resources.getString(item.descResourceId)).split(".")
+        holder.descView.text = descPreview[0] + ". " + descPreview[1]
         holder.card.setOnClickListener{
             val action: NavDirections = HomeFragmentDirections.actionNavigationHomeToDetailsFragment(position)
             holder.view.findNavController().navigate(action)

@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import unj.cs.hw4.adapter.ItemAdapter
+import unj.cs.hw4.data.Datasource
+import unj.cs.hw4.data.FavoriteCoffee
 import unj.cs.hw4.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
@@ -22,16 +25,20 @@ class DashboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+//        val dashboardViewModel =
+//            ViewModelProvider(this).get(DashboardViewModel::class.java)
 
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+        val myDataset = FavoriteCoffee().getFavoriteCoffee()
+        val recyclerView = binding.dashboardRecyclerView
+        recyclerView.adapter = ItemAdapter(requireContext(), myDataset)
+
+//        val textView: TextView = binding.textDashboard
+//        dashboardViewModel.text.observe(viewLifecycleOwner) {
+//            textView.text = it
+//        }
         return root
     }
 
