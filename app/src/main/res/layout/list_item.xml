@@ -2,10 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:importantForAccessibility="no"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,6 +39,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:text="@string/coffee_desc1" />
+
+<!--            <Button-->
+<!--                android:id="@+id/button_to_detail"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Go"-->
+<!--                />-->
         </LinearLayout>
 
     </LinearLayout>

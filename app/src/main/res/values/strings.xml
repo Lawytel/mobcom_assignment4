@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Coffee Catalog App</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">List Coffee</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="coffee1">Coffee title 1</string>
@@ -23,4 +23,8 @@
     <string name="coffee_desc8">Coffee desc 8</string>
     <string name="coffee_desc9">Coffee desc 9</string>
     <string name="coffee_desc10">Coffee desc 10</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="coffee_name">Coffee Name %s</string>
+    <string name="test">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque viverra justo nec ultrices dui sapien eget mi. Faucibus purus in massa tempor nec feugiat nisl. Sit amet risus nullam eget felis. Purus gravida quis blandit turpis cursus in hac habitasse. Rhoncus urna neque viverra justo nec. Nisl suscipit adipiscing bibendum est ultricies. Aliquet enim tortor at auctor urna. Dui nunc mattis enim ut tellus. Nulla malesuada pellentesque elit eget gravida cum. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero id. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Pellentesque massa placerat duis ultricies lacus sed. Fermentum iaculis eu non diam phasellus. Arcu vitae elementum curabitur vitae. Viverra aliquet eget sit amet tellus cras adipiscing enim eu. Vitae aliquet nec ullamcorper sit amet risus. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Lacus laoreet non curabitur gravida arcu. asdjkl dawkjd adjkalw dwkajdklasd kdjwkaldja kjwakldjkald kawjdklaw dklawjdkl waeiwqejoi qwe qiweioqw eioqwe oqwiejiqw eiwq.</string>
 </resources>
