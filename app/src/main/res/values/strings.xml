@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Coffee Catalog App</string>
     <string name="title_home">List Coffee</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_favorite">Favorite Coffee</string>
     <string name="title_notifications">Notifications</string>
     <string name="coffee1">Espresso</string>
     <string name="coffee2">Red Eye</string>

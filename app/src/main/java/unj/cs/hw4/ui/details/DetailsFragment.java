@@ -7,22 +7,31 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.List;
+
+import unj.cs.hw4.MainActivity;
 import unj.cs.hw4.R;
+import unj.cs.hw4.adapter.FavoriteAdapter;
 import unj.cs.hw4.data.Datasource;
+import unj.cs.hw4.data.FavoriteCoffee;
 import unj.cs.hw4.databinding.FragmentDetailsBinding;
 import unj.cs.hw4.model.Coffee;
 
 public class DetailsFragment extends Fragment {
     private static String POSITION = "position";
     private FragmentDetailsBinding binding = null;
+    List<Coffee> dataset = FavoriteAdapter.dataset;
     private Coffee item;
+    public int coffeeId;
     public FragmentDetailsBinding getBinding() {
         return binding;
     }
@@ -44,8 +53,9 @@ public class DetailsFragment extends Fragment {
 
         Bundle arguments = getArguments();
         // Log.d("ARG", arguments.get(POSITION).toString());
-        int coffeeId = (int) arguments.get(POSITION);
+        coffeeId = (int) arguments.get(POSITION);
         item = new Datasource().loadDataset().get(coffeeId);
+
         // Log.d("ARG", String.valueOf(coffeeId));
         // Log.d("COFFEE", item.toString());
         BottomNavigationView navBar = getActivity().findViewById(R.id.nav_view);
@@ -59,7 +69,8 @@ public class DetailsFragment extends Fragment {
             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentDetailsBinding.inflate(inflater, container, false);
-        return getBinding().getRoot();
+        View root = getBinding().getRoot();
+        return root;
         // return inflater.inflate(R.layout.fragment_details, container, false);
     }
 
@@ -72,6 +83,18 @@ public class DetailsFragment extends Fragment {
         title.setText(item.getTitleResourceId());
         imgCoffee.setImageResource(item.getImageResourceId());
         desc.setText(item.getDescResourceId());
+        FloatingActionButton fav = getBinding().favoriteFab;
+        fav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(dataset.add(item)){
+                    Toast.makeText(getContext(), "Added to favorite!", Toast.LENGTH_SHORT).show();
+                }
+                // Log.d("FAV", String.valueOf(coffeeId));
+//                favCoffees.addFavoriteCoffee(item);
+//                Log.d("LIST FAV", favCoffees.getFavoriteCoffee().toString());
+            }
+        });
         // title.setText(getString(R.string.coffee_name, "Americano"));
     }
 

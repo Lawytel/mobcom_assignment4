@@ -18,8 +18,12 @@
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="unj.cs.hw4.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:label="@string/title_favorite"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detailsFragment"
         android:name="unj.cs.hw4.ui.details.DetailsFragment"
