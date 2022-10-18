@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="coffee_titles">
+        <item>Espresso</item>
+        <item>Red Eye</item>
+        <item>Americano</item>
+        <item>Cafe au Lait</item>
+        <item>Macchiato</item>
+        <item>Cortado</item>
+        <item>Breve</item>
+        <item>Cappuccino</item>
+        <item>Cafe Latte</item>
+        <item>Mocha</item>
+    </string-array>
+
+    <string-array name="coffee_descs">
+        <item>The espresso, also known as a short black, is approximately 1 oz. of highly concentrated coffee. Although simple in appearance, it can be difficult to master.</item>
+        <item>The red eye\'s purpose is to add a boost of caffeine to your standard cup of coffee.</item>
+        <item>Americanos are popular breakfast drinks and thought to have originated during World War II. Soldiers would add water to their coffee to extend their rations farther. The water dilutes the espresso while still maintaining a high level of caffeine.</item>
+        <item>The cafe au lait is typically made with French press coffee instead of an espresso shot to bring out the different flavors in the coffee. It is then paired with scalded milk instead of steamed milk and poured at a 50/50 ratio.</item>
+        <item>The word macchiato means mark or stain. This is in reference to the mark that steamed milk leaves on the surface of the espresso as it is dashed into the drink. Flavoring syrups are often added to the drink according to customer preference.</item>
+        <item>The cortado takes the macchiato one step further by evenly balancing the espresso with warm milk in order to reduce the acidity.</item>
+        <item>The breve provides a decadent twist on the average espresso, adding steamed half-and-half to create a rich and creamy texture.</item>
+        <item>This creamy coffee drink is usually consumed at breakfast time in Italy and is loved in the United States as well. It is usually associated with indulgence and comfort because of its thick foam layer and additional flavorings that can be added to it.</item>
+        <item>Cafe lattes are considered an introductory coffee drink since the acidity and bitterness of coffee are cut by the amount of milk in the beverage. Flavoring syrups are often added to the latte for those who enjoy sweeter drinks.</item>
+        <item>The mocha is considered a coffee and hot chocolate hybrid. The chocolate powder or syrup gives it a rich and creamy flavor and cuts the acidity of the espresso.</item>
+    </string-array>
+</resources>
